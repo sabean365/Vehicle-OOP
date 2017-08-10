@@ -1,0 +1,36 @@
+/* © Sarah E. Bean
+ * This program will generate class Vehicle, including private attributes,
+ * constructor, setters and getters and a toString method.
+ */
+
+
+	//declare class Vehicle and assign private attributes
+	public class Vehicle {
+		private String make;
+		private String model;
+		private int year;
+		private double price;
+		private Motor motor;
+	
+	//generate constructor for class Vehicle
+	public Vehicle(String make, String model, int year, double price, Motor motor) {
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.price = price;
+		this.motor = motor;
+	
+	//generate getter and setter for price
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Vehicle make=" + make + ", model=" + model + ", year=" + year + ", price=" + price + "\nMotor=" + motor;
+	}
+	
+	}
