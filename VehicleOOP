@@ -1,0 +1,35 @@
+/* © Sarah E. Bean 
+ * This program will generate class Motor, including private attributes,
+ * constructor, setters and getters and a toString method.
+ */
+package bean10;
+
+	//declare class Motor and its private attributes
+	public class Motor {
+		private int cylinders;
+		private int hp;
+		private String type; 
+	
+	//generate constructor for class Motor
+	Motor(int cylinders, int hp, String type) {
+		this.cylinders = cylinders;
+		this.hp = hp;
+		this.type = type;
+	}		
+	//generate getters for cylinders, hp, and type 
+	public int getCylinders() {
+		return cylinders;
+	}
+	public int getHp() {
+		return hp;
+	}
+	public String getType() {
+		return type;
+	}
+	//generate a toString method for Motor class
+	@Override
+	public String toString() {
+		return "Motor cylinders=" + cylinders + ", hp=" + hp + ", type=" + type;
+	}
+
+	}
