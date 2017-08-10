@@ -1,0 +1,61 @@
+/* © Sarah E. Bean
+ * This program will explore the abilities of StringBuilder
+ * and check the pattern of an inputed phone number.
+ */
+
+	import java.util.Scanner;
+
+	public class SBuilder { //declare class
+
+	public static void main(String[] args) {//signature
+		//create empty string
+		StringBuilder sBuilder = new StringBuilder();
+
+		//append string with charArray
+		char[] charArray = {'G', 'o', 's', 'l', 'i', 'n', 'g'};
+		sBuilder.append(charArray);
+
+		//insert name James at beginning of string
+		sBuilder.insert(0, "James ");
+			System.out.println(sBuilder); //print string
+		
+		//create another empty string
+		StringBuilder stringBuilder = new StringBuilder();
+
+		//append string with strings
+		stringBuilder.append("I");
+		stringBuilder.append(" ");
+		stringBuilder.append("twapped");
+		stringBuilder.append(" ");
+		stringBuilder.append("a");
+		stringBuilder.append(" ");
+		stringBuilder.append("wascally");
+		stringBuilder.append(" ");
+		stringBuilder.append("wabbit");
+
+		//replace all "w"s with "r"s
+		String s = "I twapped a wascally wabbit".replaceAll("w", "r");
+		System.out.println(s);//print corrected sentence (except for Elmer Fudd)
+		
+		//institute the scanner
+		Scanner input = new Scanner(System.in);
+		
+		//prompt user for phone number
+		System.out.println("Enter phone number without area code:");
+		
+		//assign phone to input
+		String phone = input.nextLine();
+		input.close();//close scanner
+
+		String pattern = "\\d{3}-\\d{4}"; //initialize pattern
+		//if else statements to check for correct formate using "matches"
+		if (phone.matches(pattern)) {
+			System.out.println("Good input");
+		}
+		else {
+			System.out.println("Incorrect format. Please try again.");
+		
+	}
+
+}	
+}
