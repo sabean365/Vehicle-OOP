@@ -1,0 +1,24 @@
+/* © Sarah E. Bean
+ * This program is an executable program which will declare and
+ * print two instances of Vehicle and two instances of Motor.
+ */
+
+package bean10;
+
+public class TestVehicle {
+
+	public static void main(String[] args) {
+	
+		//declare two Class Vehicle instances
+		Motor hy = new Motor(4, 200, "gas");
+		Motor ho = new Motor(4, 110, "hybrid");
+		Vehicle hyundai = new Vehicle("Hyundai", "Sonata", 2015, 23050.87, hy);
+		Vehicle honda = new Vehicle("Honda", "Civic", 2015, 30875.99, ho);
+
+		//print statements for Vehicle and Motor instances
+		System.out.println(hyundai.toString());
+		System.out.println(honda.toString());
+
+	}
+
+}
