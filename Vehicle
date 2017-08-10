@@ -2,7 +2,6 @@
  * This program will generate class Motor, including private attributes,
  * constructor, setters and getters and a toString method.
  */
-package bean10;
 
 	//declare class Motor and its private attributes
 	public class Motor {
